@@ -16,4 +16,9 @@
         <item name="android:windowContentOverlay">@null</item><!--分割线-->
     </style>
 
+    //TabLayout的字体大小
+    <style name="TabLayoutTextSize">
+        <item name="android:textSize">12dp</item>
+    </style>
+
 </resources>

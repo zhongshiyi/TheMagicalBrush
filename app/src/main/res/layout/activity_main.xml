@@ -23,6 +23,7 @@
             app:tabGravity="fill"
             app:tabIndicatorColor="@android:color/white"
             app:tabMode="fixed"
+            app:tabTextAppearance="@style/TabLayoutTextSize"
             app:tabSelectedTextColor="#000000"
             app:tabTextColor="#838380" />
     </LinearLayout>
