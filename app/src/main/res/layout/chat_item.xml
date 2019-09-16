@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_columnSpan="2"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/im_chat_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/picture_2"/>
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小小白" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/mylove" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="10个人喜欢"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/menu" />
+
+    </LinearLayout>
+
+</LinearLayout>
