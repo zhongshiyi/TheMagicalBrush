@@ -52,7 +52,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_picture_2"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -60,7 +60,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.SplashActivity"
             android:theme="@style/NoActivityFullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -69,6 +69,10 @@
             </intent-filter>
         </activity>
 
+        <!--主页面-->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/NoActivityFullscreen"/>
         <!--画板-->
         <activity
             android:name=".ui.DrawingBoard"

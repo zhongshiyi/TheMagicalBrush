@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.themagicalbrush.R;
 import com.example.themagicalbrush.ui.DrawingBoard;
 import com.example.themagicalbrush.ui.Memory;
+import com.example.themagicalbrush.utils.UtilTools;
 
 /**
  * 项目名：    TheMagicalBrush
@@ -28,6 +29,8 @@ public class PaintingFragment extends Fragment implements View.OnClickListener {
     private ImageView iv_memory;
     private ImageView iv_painting;
     private ImageView iv_other;
+
+    private TextView tv_app_name;
 
     @Nullable
     @Override
@@ -47,6 +50,10 @@ public class PaintingFragment extends Fragment implements View.OnClickListener {
         iv_painting.setOnClickListener(this);
         iv_other = view.findViewById(R.id.iv_other);
         iv_other.setOnClickListener(this);
+
+        tv_app_name = view.findViewById(R.id.tv_app_name);
+        //设置字体
+        UtilTools.setFont(getActivity(),tv_app_name);
     }
 
     @Override

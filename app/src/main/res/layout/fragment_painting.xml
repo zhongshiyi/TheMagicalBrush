@@ -7,10 +7,10 @@
     >
 
     <TextView
-
+        android:id="@+id/tv_app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logo"
+        android:text="iPaint   iDraw"
         android:textSize="40dp"/>
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_width="110dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="2dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="2dp"
             android:src="@drawable/painting" />
 
         <ImageView
