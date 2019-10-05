@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">iPaint&#160;&#160;&#160;&#160;&#160;iDraw</string>
+    <string name="app_name">iPaint&#160;&#160;iDraw</string>
     <string name="ChatFragment">社区</string>
     <string name="UserFragment">个人</string>
     <string name="PaintingFragment">主页</string>

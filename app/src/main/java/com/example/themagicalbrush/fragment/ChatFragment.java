@@ -32,29 +32,13 @@ import java.util.List;
 public class ChatFragment extends Fragment {
 
     private RecyclerView recyclerView;
-    List<ChatData> list = new ArrayList<>();
-
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat,container,false);
         recyclerView = view.findViewById(R.id.recycler_view);
-//        GridLayoutManager manager = new GridLayoutManager(container.getContext(),2);
-//        recyclerView.setLayoutManager(manager);
-//
-//
-//        ChatData data = new ChatData();
-//        data.setAuthor("小小白");
-//        data.setImagurl("https://i.loli.net/2019/09/17/S8R6IohxHNC4TXp.jpg");
-//
-//
-//        for (int i = 0;i < 12; i ++){
-//            list.add(data);
-//        }
-//
-//        ChatAdapter adapter = new ChatAdapter(list);
-//        recyclerView.setAdapter(adapter);
+
 
         final StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);//定义瀑布流管理器，第一个参数是列数，第二个是方向。
         layoutManager.setGapStrategy(StaggeredGridLayoutManager.GAP_HANDLING_NONE);//不设置的话，图片闪烁错位，有可能有整列错位的情况。

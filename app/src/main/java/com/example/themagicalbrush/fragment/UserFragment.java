@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +17,7 @@ import com.example.themagicalbrush.ui.Chat;
 import com.example.themagicalbrush.ui.Discuss;
 import com.example.themagicalbrush.ui.Inform;
 import com.example.themagicalbrush.ui.MyLike;
+import com.example.themagicalbrush.ui.UserInfo;
 
 /**
  * 项目名：    TheMagicalBrush
@@ -32,6 +34,7 @@ public class UserFragment extends Fragment implements View.OnClickListener {
     private LinearLayout ll_discuss;
     private LinearLayout ll_chat;
     private LinearLayout ll_inform;
+    private LinearLayout ll_user_info;
 
     @Nullable
     @Override
@@ -53,6 +56,8 @@ public class UserFragment extends Fragment implements View.OnClickListener {
         ll_chat.setOnClickListener(this);
         ll_inform = view.findViewById(R.id.ll_inform);
         ll_inform.setOnClickListener(this);
+        ll_user_info = view.findViewById(R.id.ll_user_info);
+        ll_user_info.setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +74,9 @@ public class UserFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.ll_inform:
                 startActivity(new Intent(getActivity(),Inform.class));
+                break;
+            case R.id.ll_user_info:
+                startActivity(new Intent(getActivity(),UserInfo.class));
                 break;
         }
     }

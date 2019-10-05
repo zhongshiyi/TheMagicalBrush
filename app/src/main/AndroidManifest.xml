@@ -81,7 +81,6 @@
         <activity
             android:name=".ui.Memory"
             android:theme="@style/NoActivityFullscreen" />
-
         <!--喜欢-->
         <activity android:name=".ui.MyLike"/>
         <!--评论-->
@@ -90,7 +89,9 @@
         <activity android:name=".ui.Chat"/>
         <!--通知-->
         <activity android:name=".ui.Inform"/>
-
+        <!--个人资料-->
+        <activity android:name=".ui.UserInfo"
+            android:theme="@style/NoActivityFullscreen"/>
     </application>
 
 </manifest>
