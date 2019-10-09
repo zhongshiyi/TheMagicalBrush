@@ -31,10 +31,40 @@
     <android.support.v7.widget.RecyclerView
         android:layout_marginLeft="28dp"
         android:id="@+id/memory_recycler_view"
-        android:layout_gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal" />
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
 
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="126dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/delete"
+            android:src="@mipmap/upload" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/delete" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="128dp"
+            android:layout_toRightOf="@+id/delete"
+            android:src="@mipmap/all" />
+
+    </RelativeLayout>
 
 </LinearLayout>

@@ -39,7 +39,14 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
         inflater = LayoutInflater.from(context);
     }
 
-    public final String[] imageUrls = new String[]{"https://img-my.csdn.net/uploads/201309/01/1378037235_3453.jpg",
+    public final String[] imageUrls = new String[]{
+            "https://ae01.alicdn.com/kf/H690d06469f124dd58566d5abe6ed4a02y.png",
+            "https://ae01.alicdn.com/kf/H343db467578947398615e2b64f44f1b5C.jpg",
+            "https://ae01.alicdn.com/kf/H7292b27cad5f4bc293a080b31f9386f4u.jpg",
+            "https://ae01.alicdn.com/kf/H4ef5e4e83d9040bdb610892323e07422M.png",
+            "https://ae01.alicdn.com/kf/Hbb522e430c5f4dd28b6d4c100425f3b2N.jpg",
+            "https://ae01.alicdn.com/kf/H55f952addc454dbfb52170aa0c5b3f4dI.png",
+            "https://ae01.alicdn.com/kf/H6f88e8a4dd324e36bc921bd22c1e13d2Z.png",
             "https://ae01.alicdn.com/kf/H13c7a9e1dbb54efd895e0f882a1ff0adc.png",
             "https://ae01.alicdn.com/kf/H99a4042a0ad84439ae2aeec4dd4aec8ce.jpg",
             "https://ae01.alicdn.com/kf/H8a9d31b9852b4b4ca178445995f549d0f.jpg",
@@ -51,46 +58,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
             "https://ae01.alicdn.com/kf/H7d47d73990724b5e9284160d91e9424aq.jpg",
             "https://ae01.alicdn.com/kf/Hd39a6f3dc9104eb0b849cf642ddb327bW.jpg",
             "https://ae01.alicdn.com/kf/H8de14e5fe110421990793fd2f055b21do.png",
-            "https://img-my.csdn.net/uploads/201309/01/1378037152_6352.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037151_9565.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037151_7904.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037148_7104.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037129_8825.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037128_5291.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037128_3531.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037127_1085.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037095_7515.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037094_8001.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037093_7168.jpg",
-            "https://img-my.csdn.net/uploads/201309/01/1378037091_4950.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949643_6410.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949642_6939.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949630_4505.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949630_4593.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949629_7309.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949629_8247.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949615_1986.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949614_8482.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949614_3743.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949614_4199.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949599_3416.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949599_5269.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949598_7858.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949598_9982.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949578_2770.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949578_8744.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949577_5210.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949577_1998.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949482_8813.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949481_6577.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949480_4490.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949455_6792.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949455_6345.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949442_4553.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949441_8987.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949441_5454.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949454_6367.jpg",
-            "https://img-my.csdn.net/uploads/201308/31/1377949442_4562.jpg"};
+            };
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -105,7 +73,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
-        holder.textView.setText("小小白" + position);
+        String[] name = {"小小白","王昭君","蜡笔小新","张三","Miles","宝贝",
+                "李凯凯","中十一","李浩豪","哈哈","三棵树","八个雅鹿",
+                "少先队员","蜡笔小新","蜡笔小新","蜡笔小新","蜡笔小新","蜡笔小新","蜡笔小新"};
+        holder.textView.setText(name[position]);
+        holder.tv_number.setText("10" + position * position);
         //用了Glide加载图片，这是一款不错的图片加载框架，毕竟属于Google亲儿子了吧，不会用的也可以用picasso，这个框架参考picasso的，基本跟picasso一模一样。
         Glide.with(context)
                 .load(imageUrls[position])
@@ -139,11 +111,13 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MyViewHolder> 
     class MyViewHolder extends RecyclerView.ViewHolder {
         private ImageView imageView;
         private TextView textView;
+        private TextView tv_number;
 
         public MyViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.im_chat_img);
             textView = itemView.findViewById(R.id.tv_author);
+            tv_number = itemView.findViewById(R.id.tv_number);
         }
     }
 }

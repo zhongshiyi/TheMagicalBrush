@@ -17,6 +17,7 @@ import com.example.themagicalbrush.R;
 
 import com.example.themagicalbrush.adapter.ChatAdapter;
 import com.example.themagicalbrush.entity.ChatData;
+import com.example.themagicalbrush.utils.UtilTools;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,12 +33,17 @@ import java.util.List;
 public class ChatFragment extends Fragment {
 
     private RecyclerView recyclerView;
+    private TextView tv_chat;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_chat,container,false);
         recyclerView = view.findViewById(R.id.recycler_view);
+
+        tv_chat = view.findViewById(R.id.tv_chat);
+        //设置字体
+        UtilTools.setFont(getActivity(),tv_chat);
 
 
         final StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL);//定义瀑布流管理器，第一个参数是列数，第二个是方向。

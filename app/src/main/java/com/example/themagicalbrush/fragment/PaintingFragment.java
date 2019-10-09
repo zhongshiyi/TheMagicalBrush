@@ -63,9 +63,8 @@ public class PaintingFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(),Memory.class));
                 break;
             case R.id.iv_painting:
-                startActivity(new Intent(getActivity(),DrawingBoard.class));
+                startActivity(new Intent(getActivity(), DrawingBoard.class));
                 break;
-
         }
     }
 }

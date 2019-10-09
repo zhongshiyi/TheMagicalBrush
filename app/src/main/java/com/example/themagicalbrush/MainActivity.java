@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
     //初始化View
     @SuppressLint("RestrictedApi")
     private void initView() {
-
         mTabLayout = findViewById(R.id.mTabLayout);
         mViewPager = findViewById(R.id.main_mViewPager);
 

@@ -38,6 +38,11 @@ public class MemoryAdapter extends RecyclerView.Adapter<MemoryAdapter.MyViewHold
     }
 
     public final String[] imageUrls = new String[]{
+            "https://ae01.alicdn.com/kf/H7292b27cad5f4bc293a080b31f9386f4u.jpg",
+            "https://ae01.alicdn.com/kf/Hbb522e430c5f4dd28b6d4c100425f3b2N.jpg",
+            "https://ae01.alicdn.com/kf/H55f952addc454dbfb52170aa0c5b3f4dI.png",
+            "https://ae01.alicdn.com/kf/H6f88e8a4dd324e36bc921bd22c1e13d2Z.png",
+            "https://ae01.alicdn.com/kf/H4ef5e4e83d9040bdb610892323e07422M.png",
             "https://ae01.alicdn.com/kf/H13c7a9e1dbb54efd895e0f882a1ff0adc.png",
             "https://ae01.alicdn.com/kf/H99a4042a0ad84439ae2aeec4dd4aec8ce.jpg",
             "https://ae01.alicdn.com/kf/H8a9d31b9852b4b4ca178445995f549d0f.jpg",

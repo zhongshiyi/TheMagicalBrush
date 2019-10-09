@@ -42,11 +42,20 @@
                 android:src="@drawable/mylove" />
 
             <TextView
+                android:id="@+id/tv_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="10个人喜欢"
+                android:text="10"
                 android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="个人喜欢"
+                android:textSize="10dp" />
+
 
             <ImageView
                 android:layout_width="15dp"
